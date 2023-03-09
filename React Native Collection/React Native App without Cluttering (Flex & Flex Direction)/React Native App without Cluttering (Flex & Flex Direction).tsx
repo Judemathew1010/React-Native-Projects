@@ -1,28 +1,14 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
-  Button,
-  Linking,
+  
   StyleSheet,
   Text,
   View,
 } from 'react-native';
 
-let counter = 0;
-let click =0;
 const App = () => {
   
-  const[name,setname] =useState('Add 5')
-  const[session, setSession] = useState({ number: 1, title: 'state1'})
-  const[current, setCurrent] = useState(true)
 
-  const onClickHandler = () =>  {
-    counter += 5;
-    click += 1;
-    setname('ya Add 5 again')
-    setSession({ number: 2, title: 'state2'})
-    setCurrent(false) 
-
-  }
   return (
     <View  style={styles.body}>
       <View style={styles.View1}>
